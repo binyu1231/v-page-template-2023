@@ -7,6 +7,8 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Footer: typeof import('./src/components/Footer.vue')['default']
+    Header: typeof import('./src/components/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     IAntDesignMenuUnfoldOutlined: typeof import('~icons/ant-design/menu-unfold-outlined')['default']
     IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
@@ -16,7 +18,10 @@ declare module '@vue/runtime-core' {
     IconTooling: typeof import('./src/components/icons/IconTooling.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Search: typeof import('./src/components/Search.vue')['default']
+    Sidebar: typeof import('./src/components/Sidebar.vue')['default']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
+    TocNav: typeof import('./src/components/TocNav.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }
 }

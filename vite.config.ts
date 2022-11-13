@@ -64,6 +64,8 @@ export default defineConfig({
       ],
     }),
     markdown({ // https://github.com/antfu/vite-plugin-md
+      wrapperClasses: 'mk',
+      headEnabled: true,
       markdownItSetup(md) {
         // https://prismjs.com/
         md.use(markdownPrism)

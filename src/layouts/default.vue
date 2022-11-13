@@ -8,6 +8,6 @@
 </template>
 <style lang="postcss">
 .default-layout {
-  @apply;
+  @apply bg-indigo-300;
 }
 </style>
