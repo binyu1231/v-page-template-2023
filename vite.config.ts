@@ -11,7 +11,7 @@ import transformerDirectives from '@unocss/transformer-directives'
 import markdown from 'vite-plugin-md'
 import autoprefixer from 'autoprefixer'
 import postcssNesting from 'postcss-nesting'
-import inspect from 'vite-plugin-inspect'
+// import inspect from 'vite-plugin-inspect'
 import components from 'unplugin-vue-components/vite'
 import icons from 'unplugin-icons/vite'
 import iconsResolver from 'unplugin-icons/resolver'
@@ -81,7 +81,7 @@ export default defineConfig({
         md.use(markdownToc, { level: 2 })
       }
     }),
-    inspect()
+    // inspect()
   ],
   css: {
     postcss: {
