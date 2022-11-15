@@ -8,6 +8,8 @@ meta:
 <template>
   <div class="page-not-found bg-indigo-500">
     <span>not found</span>
+    <br>
+    <router-link to="/">back home</router-link>
   </div>
 </template>
 <style lang="postcss">
