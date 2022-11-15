@@ -1,29 +1,22 @@
 :root {
-  --scrollbar-width: 6px;
-  --c-divider-light: rgba(60, 60, 67, .12);
-  --c-divider-dark: rgba(84, 84, 88, .48);
-  --c-bg: #fff;
+  --scrollbar-width: 8px;
 }
 
 ::-webkit-scrollbar{
-width:var(--scrollbar-width);
+  @apply w-2;
+  
+  &:horizontal {
+    @apply h-2;
+  }
 }
-::-webkit-scrollbar:horizontal{
-height:var(--scrollbar-width);
-}
-
 
 
 ::-webkit-scrollbar-track{
-background: var(--c-bg);
+  @apply bg-white dark:bg-slate-800;
 }
 
 ::-webkit-scrollbar-thumb{
-transition: .2s ease background;
-background:var(--c-divider-light);
-border-radius:10px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-background:var(--c-divider-dark);
+  @apply 
+    bg-slate-300 hover:bg-slate-400 dark:bg-slate-700 dark:hover:bg-slate-500
+    rounded-full;
 }

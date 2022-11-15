@@ -34,7 +34,7 @@ watch(key, () => {
           </select>
           <i-akar-icons-triangle-down />
         </div>
-        <div class="search-container">
+        <div class="header-search-container">
           <Search />
         </div>
         <div class="header-theme-switch" @click="() => toggleDark()">
@@ -82,7 +82,7 @@ watch(key, () => {
   @apply ;
 }
 
-.search-container {
+.header-search-container {
   @apply flex-1;
 }
 </style>

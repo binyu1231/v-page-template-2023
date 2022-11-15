@@ -116,7 +116,7 @@ export default {
                     </li> -->
                     <SidebarLinkSubgroup v-for="(navChild, j) in nav.children" :key="j" :title="navChild.name" :open="currentRoute.fullPath.includes('alternative-scheme')">
                       <li class="mt-3" v-for="(navSon, k) in navChild.children" :key="k">
-                        <router-link to="/documentation/alternative-scheme/dummy-slug" custom v-slot="{ href, navigate, isExactActive }">
+                        <router-link :to="navSon.value" custom v-slot="{ href, navigate, isExactActive }">
                           <a
                             class="sidebar-son-link"
                             :class="{ active: isExactActive}"
